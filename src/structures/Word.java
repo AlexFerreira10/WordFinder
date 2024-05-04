@@ -1,9 +1,6 @@
 package structures;
 
 import java.lang.Comparable;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.stream.Collectors;
 import java.util.List;
 import java.io.IOException;
 
@@ -81,19 +78,24 @@ public class Word extends TreeAVL implements Comparable<Word> {
 
         System.out.println("Total de ocorrências da palavra \"" + name + "\": " + totalOccurrences + "\nOcorrências: ");
 
-        List<Integer> list = new ArrayList<>();
+        List<Integer> list;
         String poem = null;
 
         for(File file : files){
             poem = file.getName();
             list = file.counterLine(file, name);
-
-            System.out.print(poem + " - Linhas: ");
-            for (Integer lineNumber : list) {
-                System.out.print(lineNumber + " , ");
+            if(list.size() > 0) {
+                System.out.print(poem + " - Linhas: ");
+                for (Integer lineNumber : list) {
+                    System.out.print(lineNumber + ", ");
+                }
+                System.out.println();
             }
-            System.out.println();
         }
+        System.out.println();
+        System.out.println();
+        System.out.println();
+        System.out.println();
     }
 
     @Override

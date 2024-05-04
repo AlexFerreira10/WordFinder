@@ -49,7 +49,6 @@ public class File {
         }
     }
 
-
     public int counterWord(File file, String name) throws IOException {
 
         try (BufferedReader reader = new BufferedReader(new FileReader(path))) {

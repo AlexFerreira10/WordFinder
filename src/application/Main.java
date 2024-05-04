@@ -1,42 +1,47 @@
 package application;
 
 import structures.TreeAVL;
-import structures.File;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Arrays;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        /*
-        List<File> files = new ArrayList<>();
-        files.addAll(Arrays.asList(
-                new File("Amor", "/home/kali/Java-Projects/WordFinder/Files/Amor.txt"),
-                new File("Canção do Exílio", "/home/kali/Java-Projects/WordFinder/Files/CancaodoExilio.txt"),
-                new File("O tempo", "/home/kali/Java-Projects/WordFinder/Files/OTempo.txt"),
-                new File("Soneto de Fidelidade", "/home/kali/Java-Projects/WordFinder/Files/SonetodeFidelidade.txt"),
-                new File("Soneto de Fidelidade", "/home/kali/Java-Projects/WordFinder/Files/MeuDestino.txt")
-        ));*/
-
-       // files.forEach(x -> x.read(tree));
 
         TreeAVL tree = new TreeAVL();
-        //tree.addFiles();
         TreeAVL.getFiles().forEach(x -> x.read(tree));
+        Scanner sc = new Scanner(System.in);
+        int option = 7;
+        do {
+            Main.menu();
+            option = Integer.parseInt(sc.nextLine());
 
+            switch (option){
+                case 0 :
+                    option = 0;
+                    break;
+                case 1:
+                    System.out.println("Digite a Palavra: ");
+                    String word = sc.next();
+                    if(tree.search(word) != null){
+                        tree.search(word).info();
+                    } else {
+                        System.out.println("Palavra não encontrada! ");
+                    }
+                    sc.nextLine();
+                    break;
+                case 2:
+                    System.out.println("Total de palavras: " + tree.getTotalWord());
+                    break;
+                default:
+                    System.out.println("Opção inválida.");
+            }
+        } while(option != 0);
+    }
 
-        tree.search("E").info();
-
-
-        //tree.printInOrder(tree.getRoot());
-
-
-        /* Test
-        tree.insert("oi");
-        tree.insert("ola");
-        tree.insert("ta");
-        System.out.println(tree.search("olA")); */
-
+    public static void menu(){
+        StringBuilder sb = new StringBuilder();
+        sb.append("------------ Menu ------------").append("\n [0] - Sair").append("\n [1] - Pesquisar").append("\n [2] - Total de Palavras")
+                .append("\n Option: ");
+        System.out.print(sb);
     }
 }

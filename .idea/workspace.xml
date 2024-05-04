@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8a3dd6ec-c873-4350-9aa9-f303868a8123" name="Changes" comment="I started the project">
+    <list default="true" id="8a3dd6ec-c873-4350-9aa9-f303868a8123" name="Changes" comment="Implemented and tested more program functions">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/application/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/structures/File.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/structures/File.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/structures/TreeAVL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/structures/TreeAVL.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/structures/Word.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/structures/Word.java" afterDir="false" />
     </list>
@@ -105,7 +104,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714786206583</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Implemented and tested more program functions">
+      <option name="closed" value="true" />
+      <created>1714838556742</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1714838556742</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -121,16 +128,12 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="I started the project" />
-    <option name="LAST_COMMIT_MESSAGE" value="I started the project" />
+    <MESSAGE value="Implemented and tested more program functions" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented and tested more program functions" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/application/Main.java</url>
-          <line>9</line>
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/structures/TreeAVL.java</url>
           <line>56</line>

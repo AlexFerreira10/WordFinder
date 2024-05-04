@@ -9,7 +9,7 @@ public class TreeAVL {
     protected static List<File> files = new ArrayList<>();
 
     private Word root;
-    private int counterWord;
+    private int totalWord;
     private boolean increased;
     private boolean decreased;
 
@@ -29,12 +29,12 @@ public class TreeAVL {
         this.root = root;
     }
 
-    public int getCounterWord() {
-        return counterWord;
+    public int getTotalWord() {
+        return totalWord;
     }
 
-    public void setCounterWord(int counterWord) {
-        this.counterWord = counterWord;
+    public void setTotalWord(int totalWord) {
+        this.totalWord = totalWord;
     }
 
     public boolean isIncreased() {
@@ -59,7 +59,12 @@ public class TreeAVL {
                 new File("Canção do Exílio", "/home/kali/Java-Projects/WordFinder/Files/CancaodoExilio.txt"),
                 new File("O tempo", "/home/kali/Java-Projects/WordFinder/Files/OTempo.txt"),
                 new File("Soneto de Fidelidade", "/home/kali/Java-Projects/WordFinder/Files/SonetodeFidelidade.txt"),
-                new File("Meu Destino", "/home/kali/Java-Projects/WordFinder/Files/MeuDestino.txt")
+                new File("Meu Destino", "/home/kali/Java-Projects/WordFinder/Files/MeuDestino.txt"),
+                new File("Jose", "/home/kali/Java-Projects/WordFinder/Files/Jose.txt"),
+                new File("Versos Íntimos", "/home/kali/Java-Projects/WordFinder/Files/Jose.txt"),
+                new File("Casamento", "/home/kali/Java-Projects/WordFinder/Files/Casamento.txt"),
+                new File("Aninha e suas Pedras", "/home/kali/Java-Projects/WordFinder/Files/AninhaESuasPedras.txt"),
+                new File("O Apanhador de Desperdícios", "/home/kali/Java-Projects/WordFinder/Files/OApanhadordeDesperdicios.txt")
         ));
     }
 
@@ -85,6 +90,7 @@ public class TreeAVL {
     public void insert(String word) {
         if(search(word) == null) {
             recursiveInsert(root, word);
+            totalWord++;
         }
     }
 
