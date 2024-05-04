@@ -1,9 +1,16 @@
 package structures;
 
 import java.lang.Comparable;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.stream.Collectors;
+import java.util.List;
+import java.io.IOException;
 
-public class Word implements Comparable<Word> {
+public class Word extends TreeAVL implements Comparable<Word> {
 
+    private int counterWord;
+    List<Integer> counterLine;
     private String name;
     private Word father;
     private Word sonLeft;
@@ -11,7 +18,7 @@ public class Word implements Comparable<Word> {
     private int bF;
 
     public Word(String name) {
-        this.name = name;
+       this.name = name;
     }
 
     public Word(String name, int bF) {
@@ -60,6 +67,33 @@ public class Word implements Comparable<Word> {
     }
 
     public void info() {
+
+        int totalOccurrences = files.stream()
+                .mapToInt(file -> {
+                    try {
+                        return file.counterWord(file, name);
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                        return 0;
+                    }
+                })
+                .sum();
+
+        System.out.println("Total de ocorrências da palavra \"" + name + "\": " + totalOccurrences + "\nOcorrências: ");
+
+        List<Integer> list = new ArrayList<>();
+        String poem = null;
+
+        for(File file : files){
+            poem = file.getName();
+            list = file.counterLine(file, name);
+
+            System.out.print(poem + " - Linhas: ");
+            for (Integer lineNumber : list) {
+                System.out.print(lineNumber + " , ");
+            }
+            System.out.println();
+        }
     }
 
     @Override

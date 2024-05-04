@@ -1,10 +1,11 @@
 package structures;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
-import java.text.ParseException;
+import java.util.Arrays;
 
 public class File {
 
@@ -24,12 +25,41 @@ public class File {
         this.name = name;
     }
 
-    public List<Integer> counterLine(String word) {
-        return null;
+    public List<Integer> counterLine(File file, String name) {
+        List<Integer> list = new ArrayList<>();
+        try (BufferedReader reader = new BufferedReader(new FileReader(path))) {
+            String line;
+            int counter = 1;
+            while ((line = reader.readLine()) != null) {
+                if (!line.isEmpty()) {
+                    String[] words = line.split("\\s+");
+
+                    for (String word : words) {
+                        if (name.equals(word)) { // Usando equals() para comparar strings
+                            list.add(counter);
+                        }
+                    }
+                }
+                counter++;
+            }
+            return list;
+        } catch (IOException e) {
+            e.printStackTrace();
+            return null;
+        }
     }
 
-    public int counterWord(String word) {
-        return 0;
+
+    public int counterWord(File file, String name) throws IOException {
+
+        try (BufferedReader reader = new BufferedReader(new FileReader(path))) {
+            long occurrences = reader.lines()
+                    //Separa ou junta streams
+                    .flatMap(line -> Arrays.stream(line.split("\\s+")))
+                    .filter(word -> word.equals(name))
+                    .count();
+            return (int) occurrences;
+        }
     }
 
     public void read(TreeAVL tree) {

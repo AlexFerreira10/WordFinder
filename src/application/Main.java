@@ -7,23 +7,29 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Arrays;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        TreeAVL tree = new TreeAVL();
-
+        /*
         List<File> files = new ArrayList<>();
         files.addAll(Arrays.asList(
                 new File("Amor", "/home/kali/Java-Projects/WordFinder/Files/Amor.txt"),
                 new File("Canção do Exílio", "/home/kali/Java-Projects/WordFinder/Files/CancaodoExilio.txt"),
                 new File("O tempo", "/home/kali/Java-Projects/WordFinder/Files/OTempo.txt"),
-                new File("Soneto de Fidelidade", "/home/kali/Java-Projects/WordFinder/Files/SonetodeFidelidade.txt")
-        ));
+                new File("Soneto de Fidelidade", "/home/kali/Java-Projects/WordFinder/Files/SonetodeFidelidade.txt"),
+                new File("Soneto de Fidelidade", "/home/kali/Java-Projects/WordFinder/Files/MeuDestino.txt")
+        ));*/
 
-        files.forEach(x -> x.read(tree));
+       // files.forEach(x -> x.read(tree));
 
-        tree.printInOrder(tree.getRoot());
+        TreeAVL tree = new TreeAVL();
+        //tree.addFiles();
+        TreeAVL.getFiles().forEach(x -> x.read(tree));
+
+
+        tree.search("E").info();
+
+
+        //tree.printInOrder(tree.getRoot());
 
 
         /* Test

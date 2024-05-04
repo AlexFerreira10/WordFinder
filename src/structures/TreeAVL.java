@@ -1,21 +1,24 @@
 package structures;
 
+import java.util.Arrays;
 import java.util.List;
+import java.util.ArrayList;
 
 public class TreeAVL {
 
-    private List<File> files;
+    protected static List<File> files = new ArrayList<>();
+
     private Word root;
     private int counterWord;
     private boolean increased;
     private boolean decreased;
 
-    public List<File> getFiles() {
-        return files;
+    public TreeAVL(){
     }
 
-    public void setFiles(List<File> files) {
-        this.files = files;
+    public static List<File> getFiles() {
+        addFiles();
+        return files;
     }
 
     public Word getRoot() {
@@ -48,6 +51,16 @@ public class TreeAVL {
 
     public void setDecreased(boolean decreased) {
         this.decreased = decreased;
+    }
+
+    private static void addFiles() {
+        files.addAll(Arrays.asList(
+                new File("Amor", "/home/kali/Java-Projects/WordFinder/Files/Amor.txt"),
+                new File("Canção do Exílio", "/home/kali/Java-Projects/WordFinder/Files/CancaodoExilio.txt"),
+                new File("O tempo", "/home/kali/Java-Projects/WordFinder/Files/OTempo.txt"),
+                new File("Soneto de Fidelidade", "/home/kali/Java-Projects/WordFinder/Files/SonetodeFidelidade.txt"),
+                new File("Meu Destino", "/home/kali/Java-Projects/WordFinder/Files/MeuDestino.txt")
+        ));
     }
 
     public Word search(String word) {
