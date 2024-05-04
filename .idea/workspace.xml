@@ -4,16 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8a3dd6ec-c873-4350-9aa9-f303868a8123" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WordFinder.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/application/Main.java" afterDir="false" />
-    </list>
+    <list default="true" id="8a3dd6ec-c873-4350-9aa9-f303868a8123" name="Changes" comment="I started the project" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -77,7 +68,20 @@
       <option name="presentableId" value="Default" />
       <updated>1714749271873</updated>
     </task>
+    <task id="LOCAL-00001" summary="I started the project">
+      <option name="closed" value="true" />
+      <created>1714786042255</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1714786042255</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="I started the project" />
+    <option name="LAST_COMMIT_MESSAGE" value="I started the project" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
