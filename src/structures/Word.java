@@ -84,7 +84,7 @@ public class Word extends TreeAVL implements Comparable<Word> {
         for(File file : files){
             poem = file.getName();
             list = file.counterLine(file, name);
-            if(list.size() > 0) {
+            if(!list.isEmpty()) {
                 System.out.print(poem + " - Linhas: ");
                 for (Integer lineNumber : list) {
                     System.out.print(lineNumber + ", ");

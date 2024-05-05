@@ -11,31 +11,38 @@ public class Main {
         TreeAVL.getFiles().forEach(x -> x.read(tree));
         Scanner sc = new Scanner(System.in);
         int option = 7;
-        do {
-            Main.menu();
-            option = Integer.parseInt(sc.nextLine());
-
-            switch (option){
-                case 0 :
-                    option = 0;
-                    break;
-                case 1:
-                    System.out.println("Digite a Palavra: ");
-                    String word = sc.next();
-                    if(tree.search(word) != null){
-                        tree.search(word).info();
-                    } else {
-                        System.out.println("Palavra não encontrada! ");
-                    }
-                    sc.nextLine();
-                    break;
-                case 2:
-                    System.out.println("Total de palavras: " + tree.getTotalWord());
-                    break;
-                default:
-                    System.out.println("Opção inválida.");
-            }
-        } while(option != 0);
+        try {
+            do {
+                Main.menu();
+                option = Integer.parseInt(sc.nextLine());
+                switch (option){
+                    case 0 :
+                        option = 0;
+                        break;
+                    case 1:
+                        System.out.println("Digite a Palavra: ");
+                        String word = sc.next();
+                        sc.nextLine();
+                        if(word.length() > 3) {
+                            if(tree.search(word) != null){
+                                tree.search(word).info();
+                            } else {
+                                System.out.println("Palavra não encontrada! ");
+                            }
+                        } else {
+                            System.out.println("O tamanho da palavra precisa ser maior que 4!");
+                        }
+                        break;
+                    case 2:
+                        System.out.println("Total de palavras: " + tree.getTotalWord());
+                        break;
+                    default:
+                        System.out.println("Opção inválida.");
+                }
+            } while(option != 0);
+        } catch(NumberFormatException e) {
+            System.out.println("Você não pode digitar letras nesse campo!");
+        }
     }
 
     public static void menu(){

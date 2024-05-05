@@ -55,23 +55,22 @@ public class TreeAVL {
 
     private static void addFiles() {
         files.addAll(Arrays.asList(
-                new File("Amor", "/home/kali/Java-Projects/WordFinder/Files/Amor.txt"),
-                new File("Canção do Exílio", "/home/kali/Java-Projects/WordFinder/Files/CancaodoExilio.txt"),
-                new File("O tempo", "/home/kali/Java-Projects/WordFinder/Files/OTempo.txt"),
-                new File("Soneto de Fidelidade", "/home/kali/Java-Projects/WordFinder/Files/SonetodeFidelidade.txt"),
-                new File("Meu Destino", "/home/kali/Java-Projects/WordFinder/Files/MeuDestino.txt"),
-                new File("Jose", "/home/kali/Java-Projects/WordFinder/Files/Jose.txt"),
-                new File("Versos Íntimos", "/home/kali/Java-Projects/WordFinder/Files/Jose.txt"),
-                new File("Casamento", "/home/kali/Java-Projects/WordFinder/Files/Casamento.txt"),
-                new File("Aninha e suas Pedras", "/home/kali/Java-Projects/WordFinder/Files/AninhaESuasPedras.txt"),
-                new File("O Apanhador de Desperdícios", "/home/kali/Java-Projects/WordFinder/Files/OApanhadordeDesperdicios.txt")
+                new File("Amor", "Files/Amor.txt"),
+                new File("Canção do Exílio", "Files/CancaodoExilio.txt"),
+                new File("O tempo", "Files/OTempo.txt"),
+                new File("Soneto de Fidelidade", "Files/SonetodeFidelidade.txt"),
+                new File("Meu Destino", "Files/MeuDestino.txt"),
+                new File("Jose", "Files/Jose.txt"),
+                new File("Versos Íntimos", "Files/Jose.txt"),
+                new File("Casamento", "Files/Casamento.txt"),
+                new File("Aninha e suas Pedras", "Files/AninhaESuasPedras.txt"),
+                new File("O Apanhador de Desperdícios", "Files/OApanhadordeDesperdicios.txt")
         ));
     }
 
     public Word search(String word) {
         Word aux = root;
         Word father = null;
-
         while (aux != null) {
             if (word.compareToIgnoreCase(aux.getName()) < 0) { //word < current.getName()
                 father = aux;
