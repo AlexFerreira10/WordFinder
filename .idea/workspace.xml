@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8a3dd6ec-c873-4350-9aa9-f303868a8123" name="Changes" comment="Implemented and tested more program functions">
+    <list default="true" id="8a3dd6ec-c873-4350-9aa9-f303868a8123" name="Changes" comment="Implemented new feature that to control the input field and the treatment of the input. Furthermore, I changed the file path to a dynamic file path">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/application/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/structures/File.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/structures/File.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/structures/TreeAVL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/structures/TreeAVL.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/structures/Word.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/structures/Word.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,7 +102,7 @@
       <option name="presentableId" value="Default" />
       <updated>1714749271873</updated>
       <workItem from="1714937538946" duration="142000" />
-      <workItem from="1714937699249" duration="2830000" />
+      <workItem from="1714937699249" duration="3234000" />
     </task>
     <task id="LOCAL-00001" summary="I started the project">
       <option name="closed" value="true" />
@@ -128,7 +128,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714838556742</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Implemented new feature that to control the input field and the treatment of the input. Furthermore, I changed the file path to a dynamic file path">
+      <option name="closed" value="true" />
+      <created>1714942299485</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1714942299485</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -148,7 +156,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="I started the project" />
     <MESSAGE value="Implemented and tested more program functions" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented and tested more program functions" />
+    <MESSAGE value="Implemented new feature that to control the input field and the treatment of the input. Furthermore, I changed the file path to a dynamic file path" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented new feature that to control the input field and the treatment of the input. Furthermore, I changed the file path to a dynamic file path" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

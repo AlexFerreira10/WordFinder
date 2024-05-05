@@ -67,7 +67,6 @@ public class TreeAVL {
                 new File("O Apanhador de Desperdícios", "Files/OApanhadordeDesperdicios.txt")
         ));
     }
-
     public Word search(String word) {
         Word aux = root;
         Word father = null;

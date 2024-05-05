@@ -41,7 +41,7 @@ public class Main {
                 }
             } while(option != 0);
         } catch(NumberFormatException e) {
-            System.out.println("Você não pode digitar letras nesse campo!");
+            System.out.println("Você não pode digitar letras nesse campo!!");
         }
     }
 
