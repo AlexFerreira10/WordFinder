@@ -5,15 +5,16 @@ import java.util.List;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
+import java.nio.file.Paths;
 import java.util.Arrays;
 public class File {
 
     private String name;
     private String path;
-
     public File(String name, String path) {
         this.name = name;
         this.path = path;
+        this.path = getAbsolutePath();
     }
 
     public String getName() {
@@ -76,5 +77,10 @@ public class File {
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+    
+    private String getAbsolutePath() {
+        String absolutePath = System.getProperty("user.dir");
+        return Paths.get(absolutePath, path).toString();
     }
 }

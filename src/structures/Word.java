@@ -6,8 +6,6 @@ import java.io.IOException;
 
 public class Word extends TreeAVL implements Comparable<Word> {
 
-    private int counterWord;
-    List<Integer> counterLine;
     private String name;
     private Word father;
     private Word sonLeft;
@@ -76,7 +74,7 @@ public class Word extends TreeAVL implements Comparable<Word> {
                 })
                 .sum();
 
-        System.out.println("Total de ocorrências da palavra \"" + name + "\": " + totalOccurrences + "\nOcorrências: ");
+        System.out.println("------------------------------"+"\n\nTotal de ocorrências da palavra \"" + name + "\": " + totalOccurrences + "\n\n\nOcorrências: ");
 
         List<Integer> list;
         String poem = null;
@@ -92,10 +90,6 @@ public class Word extends TreeAVL implements Comparable<Word> {
                 System.out.println();
             }
         }
-        System.out.println();
-        System.out.println();
-        System.out.println();
-        System.out.println();
     }
 
     @Override

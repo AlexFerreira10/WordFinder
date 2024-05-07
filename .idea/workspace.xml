@@ -4,11 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8a3dd6ec-c873-4350-9aa9-f303868a8123" name="Changes" comment="Implemented new feature that to control the input field and the treatment of the input. Furthermore, I changed the file path to a dynamic file path">
+    <list default="true" id="8a3dd6ec-c873-4350-9aa9-f303868a8123" name="Changes" comment="Implemented clear console; corrected some bugs; added out folder; made function to get the absolute path">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Files/Amor.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Files/Amor.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Files/AninhaESuasPedras" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Files/Casamento" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Files/VersosIntimos" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/application/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/structures/File.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/structures/File.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/structures/TreeAVL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/structures/TreeAVL.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/structures/Word.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/structures/Word.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +29,12 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="juanpatrickyt@gmail.com" />
+        <option value="JuanPBM1" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -40,6 +52,9 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/src/structures/File.java" root0="FORCE_HIGHLIGHTING" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
 }</component>
@@ -54,14 +69,17 @@
     "Application.Main.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/home/mint/Área de Trabalho/git/trabalhoED2/WordFinder",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "onboarding.tips.debug.path": "/home/kali/Java-Projects/WordFinder/src/Main.java",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -103,6 +121,8 @@
       <updated>1714749271873</updated>
       <workItem from="1714937538946" duration="142000" />
       <workItem from="1714937699249" duration="3234000" />
+      <workItem from="1715039869933" duration="88000" />
+      <workItem from="1715040052435" duration="3188000" />
     </task>
     <task id="LOCAL-00001" summary="I started the project">
       <option name="closed" value="true" />
@@ -157,17 +177,7 @@
     <MESSAGE value="I started the project" />
     <MESSAGE value="Implemented and tested more program functions" />
     <MESSAGE value="Implemented new feature that to control the input field and the treatment of the input. Furthermore, I changed the file path to a dynamic file path" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented new feature that to control the input field and the treatment of the input. Furthermore, I changed the file path to a dynamic file path" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/structures/TreeAVL.java</url>
-          <line>56</line>
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Implemented clear console; corrected some bugs; added out folder; made function to get the absolute path" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented clear console; corrected some bugs; added out folder; made function to get the absolute path" />
   </component>
 </project>

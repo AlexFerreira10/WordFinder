@@ -65,6 +65,7 @@ public class TreeAVL {
                 new File("Casamento", "Files/Casamento.txt"),
                 new File("Aninha e suas Pedras", "Files/AninhaESuasPedras.txt"),
                 new File("O Apanhador de Desperdícios", "Files/OApanhadordeDesperdicios.txt")
+        		
         ));
     }
     public Word search(String word) {
