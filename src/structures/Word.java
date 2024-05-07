@@ -1,5 +1,6 @@
 package structures;
 
+import javax.xml.stream.events.EndDocument;
 import java.lang.Comparable;
 import java.util.List;
 import java.io.IOException;
@@ -74,7 +75,7 @@ public class Word extends TreeAVL implements Comparable<Word> {
                 })
                 .sum();
 
-        System.out.println("------------------------------"+"\n\nTotal de ocorrências da palavra \"" + name + "\": " + totalOccurrences + "\n\n\nOcorrências: ");
+        System.out.println("------------------------------"+"\n\nTotal de ocorrências da palavra \"" + name + "\": " + totalOccurrences + "\n\n\nOcorrência(s): ");
 
         List<Integer> list;
         String poem = null;
@@ -83,9 +84,25 @@ public class Word extends TreeAVL implements Comparable<Word> {
             poem = file.getName();
             list = file.counterLine(file, name);
             if(!list.isEmpty()) {
-                System.out.print(poem + " - Linhas: ");
-                for (Integer lineNumber : list) {
-                    System.out.print(lineNumber + ", ");
+                boolean lineFound = false;
+                int listSizeVar = list.size();
+                System.out.print(poem + " - Linha(s): ");
+                for (int i = 0; i < listSizeVar; i++) {
+                    Integer lineNumber = list.get(i);
+                    if (lineNumber != null) {
+                        System.out.print(lineNumber);
+                        if (list.indexOf(lineNumber) < list.size() - 1) {
+                            System.out.print(", ");
+                        } else {
+                            System.out.print(". ");
+                        }
+                        lineFound = true;
+                    } else {
+                        break;
+                    }
+                }
+                if (!lineFound) {
+                    System.out.print(". ");
                 }
                 System.out.println();
             }
