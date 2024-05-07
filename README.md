@@ -39,7 +39,7 @@ Se você deseja contribuir para o projeto, siga as instruções abaixo:
 4. Faça push para a branch (`git push origin feature/MinhaFeature`)
 5. Crie um novo Pull Request
 
-## Autor
+## Autores
 
-Este projeto foi desenvolvido por Douglas Alexsander Ferreira Corrêa, Juan Patrick Barão
-de Menezes e Gabriel André de Lima Silva como parte da disciplina de Estrutura de Dados 2, ministrada pelo professor Dr. Denis Gonçalves Cople.
+Este projeto foi desenvolvido por _Douglas Alexsander Ferreira Corrêa, Juan Patrick Barão
+de Menezes e Gabriel André de Lima Silva_ como parte da disciplina de Estrutura de Dados 2, ministrada pelo professor Dr. Denis Gonçalves Cople.
